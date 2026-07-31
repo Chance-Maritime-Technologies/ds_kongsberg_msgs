@@ -26,7 +26,7 @@ string bist_directory
 uint8 kmall_filecount
 string kmall_filename
 string kmall_directory
-uint64 kmall_filesize_kB
+uint64 kmall_filesize_kb
 uint16 xml_filecount
 string xml_filename
 string xml_directory

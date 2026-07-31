@@ -42,8 +42,8 @@
 #   uint16_t SInumSamples;
 # };
 
-uint16 soundingIndex
-uint8 txSectorNumb
+uint16 sounding_index
+uint8 tx_sector_numb
 
 # 0 = normal detection
 # 1 = extra detection
@@ -51,7 +51,7 @@ uint8 txSectorNumb
 uint8 DETECTION_TYPE_NORMAL = 0
 uint8 DETECTION_TYPE_EXTRA_DETECTION = 1
 uint8 DETECTION_TYPE_REJECTED = 2
-uint8 detectionType
+uint8 detection_type
 
 # 0 = no valid detection
 # 1 = amplitude detection
@@ -61,44 +61,44 @@ uint8 DETECTION_METHOD_NO_VALID = 0
 uint8 DETECTION_METHOD_AMPLITUDE = 1
 uint8 DETECTION_METHOD_PHASE = 2
 
-uint8 detectionMethod
+uint8 detection_method
 
-uint8 rejectionInfo1
-uint8 rejectionInfo2
-uint8 postProcessingInfo
-uint8 detectionClass
-uint8 detectionConfidenceLevel
-float32 rangeFactor
+uint8 rejection_info1
+uint8 rejection_info2
+uint8 post_processing_info
+uint8 detection_class
+uint8 detection_confidence_level
+float32 range_factor
 
 # Estimated standard deviation as % of the detected depth. Quality Factor (QF) is calculated from IFREMER Quality Factor (IFQ):
 # QF=Est(dz)/z=100*10^-IQF
-float32 qualityFactor
+float32 quality_factor
 
-float32 detectionUncertaintyVer_m
-float32 detectionUncertaintyHor_m
-float32 detectionWindowLength_sec
-float32 echoLength_sec
-uint16 WCBeamNumb
-uint16 WCrange_samples
-float32 WCNomBeamAngleAcross_deg
-float32 meanAbsCoeff_dBPerkm
-float32 reflectivity1_dB
-float32 reflectivity2_dB
-float32 receiverSensitivityApplied_dB
-float32 sourceLevelApplied_dB
-float32 BScalibration_dB
-float32 TVG_dB
-float32 beamAngleReRx_deg
-float32 beamAngleCorrection_deg
-float32 twoWayTravelTime_sec
-float32 twoWayTravelTimeCorrection_sec
-float32 deltaLatitude_deg
-float32 deltaLongitude_deg
-float32 z_reRefPoint_m
-float32 y_reRefPoint_m
-float32 x_reRefPoint_m
-float32 beamIncAngleAdj_deg
-uint16 realTimeCleanInfo
-uint16 SIstartRange_samples
-uint16 SIcentreSample
-uint16 SInumSamples
+float32 detection_uncertainty_ver_m
+float32 detection_uncertainty_hor_m
+float32 detection_window_length_sec
+float32 echo_length_sec
+uint16 wc_beam_numb
+uint16 wc_range_samples
+float32 wc_nom_beam_angle_across_deg
+float32 mean_abs_coeff_db_per_km
+float32 reflectivity1_db
+float32 reflectivity2_db
+float32 receiver_sensitivity_applied_db
+float32 source_level_applied_db
+float32 bs_calibration_db
+float32 tvg_db
+float32 beam_angle_re_rx_deg
+float32 beam_angle_correction_deg
+float32 two_way_travel_time_sec
+float32 two_way_travel_time_correction_sec
+float32 delta_latitude_deg
+float32 delta_longitude_deg
+float32 z_re_ref_point_m
+float32 y_re_ref_point_m
+float32 x_re_ref_point_m
+float32 beam_inc_angle_adj_deg
+uint16 real_time_clean_info
+uint16 si_start_range_samples
+uint16 si_centre_sample
+uint16 si_num_samples

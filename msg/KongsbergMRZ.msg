@@ -13,11 +13,11 @@ float64 latitude_deg
 # Longitude (decimal degrees) of vessel reference point at time of midpoint of first tx pulse. Negative on western hemisphere. Parameter is set to # define UNAVAILABLE_LONGITUDE if not available.
 float64 longitude_deg
 
-# Height of vessel reference point above the ellipsoid, derived from active GGA sensor. ellipsoidHeightReRefPoint_m is GGA height corrected for motion and installation offsets of the position sensor.
-float32 ellipsoidHeightReRefPoint_m
+# Height of vessel reference point above the ellipsoid, derived from active GGA sensor. ellipsoid_height_re_ref_point_m is GGA height corrected for motion and installation offsets of the position sensor.
+float32 ellipsoid_height_re_ref_point_m
 
 # Heading of vessel at time of midpoint of first tx pulse. From active heading sensor.
-float32 headingVessel_deg
+float32 heading_vessel_deg
 
 # Distance between water line and vessel reference point in meters. At time of midpoint of first tx pulse. Measured in the surface coordinate system (SCS).Use this to move depth point (XYZ) from vessel reference point to waterline.
-float32 z_waterLevelReRefPoint_m
+float32 z_water_level_re_ref_point_m

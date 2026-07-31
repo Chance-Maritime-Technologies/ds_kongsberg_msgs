@@ -16,15 +16,15 @@
 #   uint16_t padding1;
 # };
 
-uint8 txSectorNumb
-uint8 txArrNumber
-uint8 txSubArray
-float32 sectorTransmitDelay_sec
-float32 tiltAngleReTx_deg
-float32 txNominalSourceLevel_dB
-float32 txFocusRange_m
-float32 centreFreq_Hz
-float32 signalBandWidth_Hz
-float32 totalSignalLength_sec
-uint8 pulseShading
-uint8 signalWaveForm
+uint8 tx_sector_numb
+uint8 tx_arr_number
+uint8 tx_sub_array
+float32 sector_transmit_delay_sec
+float32 tilt_angle_re_tx_deg
+float32 tx_nominal_source_level_db
+float32 tx_focus_range_m
+float32 centre_freq_hz
+float32 signal_band_width_hz
+float32 total_signal_length_sec
+uint8 pulse_shading
+uint8 signal_wave_form

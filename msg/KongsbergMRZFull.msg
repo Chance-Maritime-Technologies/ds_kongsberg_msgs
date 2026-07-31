@@ -27,9 +27,9 @@
 
 std_msgs/Header header
 
-uint32 dgmVersion
-uint8  systemID
-uint16 echoSounderID
+uint32 dgm_version
+uint8  system_id
+uint16 echo_sounder_id
 
 
 # struct EMdgmMpartition_def
@@ -39,8 +39,8 @@ uint16 echoSounderID
 # };
 # partition
 
-uint16 numOfDgms
-uint16 dgmNum
+uint16 num_of_dgms
+uint16 dgm_num
 
 # struct EMdgmMbody_def
 # {
@@ -57,15 +57,15 @@ uint16 dgmNum
 # };
 # cmnPart
 
-uint16 pingCnt
-uint8  rxFansPerPing
-uint8  rxFanIndex
-uint8  swathsPerPing
-uint8  swathAlongPosition
-uint8  txTransducerInd
-uint8  rxTransducerInd
-uint8  numRxTransducers
-uint8  algorithmType
+uint16 ping_cnt
+uint8  rx_fans_per_ping
+uint8  rx_fan_index
+uint8  swaths_per_ping
+uint8  swath_along_position
+uint8  tx_transducer_ind
+uint8  rx_transducer_ind
+uint8  num_rx_transducers
+uint8  algorithm_type
 
 # struct EMdgmMRZ_pingInfo_def
 # {
@@ -121,53 +121,53 @@ uint8  algorithmType
 # };
 # pingInfo
 
-float32 pingRate_Hz
-uint8  beamSpacing
-uint8  depthMode
-uint8  subDepthMode
-uint8  distanceBtwSwath
-uint8  detectionMode
-uint8  pulseForm
+float32 ping_rate_hz
+uint8  beam_spacing
+uint8  depth_mode
+uint8  sub_depth_mode
+uint8  distance_btw_swath
+uint8  detection_mode
+uint8  pulse_form
 
-float32 frequencyMode_Hz
-float32 freqRangeLowLim_Hz
-float32 freqRangeHighLim_Hz
-float32 maxTotalTxPulseLength_sec
-float32 maxEffTxPulseLength_sec
-float32 maxEffTxBandWidth_Hz
-float32 absCoeff_dBPerkm
-float32 portSectorEdge_deg
-float32 starbSectorEdge_deg
-float32 portMeanCov_deg
-float32 starbMeanCov_deg
-int16 portMeanCov_m
-int16 starbMeanCov_m
-uint8 modeAndStabilisation
-uint8 runtimeFilter1
-uint16 runtimeFilter2
-uint32 pipeTrackingStatus
-float32 transmitArraySizeUsed_deg
-float32 receiveArraySizeUsed_deg
-float32 transmitPower_dB
-uint16 SLrampUpTimeRemaining
+float32 frequency_mode_hz
+float32 freq_range_low_lim_hz
+float32 freq_range_high_lim_hz
+float32 max_total_tx_pulse_length_sec
+float32 max_eff_tx_pulse_length_sec
+float32 max_eff_tx_band_width_hz
+float32 abs_coeff_db_per_km
+float32 port_sector_edge_deg
+float32 starb_sector_edge_deg
+float32 port_mean_cov_deg
+float32 starb_mean_cov_deg
+int16 port_mean_cov_m
+int16 starb_mean_cov_m
+uint8 mode_and_stabilisation
+uint8 runtime_filter1
+uint16 runtime_filter2
+uint32 pipe_tracking_status
+float32 transmit_array_size_used_deg
+float32 receive_array_size_used_deg
+float32 transmit_power_db
+uint16 sl_ramp_up_time_remaining
 
-float32 yawAngle_deg
-uint16 numTxSectors
-uint16 numBytesPerTxSector
-float32 headingVessel_deg
-float32 soundSpeedAtTxDepth_mPerSec
-float32 txTransducerDepth_m
-float32 z_waterLevelReRefPoint_m
-float32 x_kmallToall_m
-float32 y_kmallToall_m
-uint8 latLongInfo
-uint8 posSensorStatus
-uint8 attitudeSensorStatus
+float32 yaw_angle_deg
+uint16 num_tx_sectors
+uint16 num_bytes_per_tx_sector
+float32 heading_vessel_deg
+float32 sound_speed_at_tx_depth_m_per_sec
+float32 tx_transducer_depth_m
+float32 z_water_level_re_ref_point_m
+float32 x_kmall_to_all_m
+float32 y_kmall_to_all_m
+uint8 lat_long_info
+uint8 pos_sensor_status
+uint8 attitude_sensor_status
 float64 latitude_deg
 float64 longitude_deg
-float32 ellipsoidHeightReRefPoint_m
+float32 ellipsoid_height_re_ref_point_m
 
-KongsbergMRZtxSectorInfo[] sectorInfo
+KongsbergMRZtxSectorInfo[] sector_info
 
 # struct EMdgmMRZ_rxInfo_def
 # {
@@ -186,18 +186,18 @@ KongsbergMRZtxSectorInfo[] sectorInfo
 # };
 # rxInfo
 
-uint16 numBytesRxInfo
-uint16 numSoundingsMaxMain
-uint16 numSoundingsValidMain
-uint16 numBytesPerSounding
-float32 WCSampleRate
-float32 seabedImageSampleRate
-float32 BSnormal_dB
-float32 BSoblique_dB
-uint16 extraDetectionAlarmFlag
-uint16 numExtraDetections
-uint16 numExtraDetectionClasses
-uint16 numBytesPerClass
+uint16 num_bytes_rx_info
+uint16 num_soundings_max_main
+uint16 num_soundings_valid_main
+uint16 num_bytes_per_sounding
+float32 wc_sample_rate
+float32 seabed_image_sample_rate
+float32 bs_normal_db
+float32 bs_oblique_db
+uint16 extra_detection_alarm_flag
+uint16 num_extra_detections
+uint16 num_extra_detection_classes
+uint16 num_bytes_per_class
 
 # struct EMdgmMRZ_extraDetClassInfo_def
 # {
@@ -208,11 +208,11 @@ uint16 numBytesPerClass
 # extraDetClassInfo[MAX_EXTRA_DET_CLASSES];
 
 
-# uint16 numExtraDetInClass
-# uint8 alarmFlag
+# uint16 num_extra_det_in_class
+# uint8 alarm_flag
 
 #   struct EMdgmMRZ_sounding_def sounding[MAX_NUM_BEAMS + MAX_EXTRA_DET];
 KongsbergMRZsounding[] soundings
 
 #   int16_t SIsample_desidB[MAX_SIDESCAN_SAMP];
-int16[] SIsample_desidB
+int16[] si_sample_desi_db
